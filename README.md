@@ -20,5 +20,5 @@ Controls
 Improvements to make:
 - All the same improvements as https://github.com/yosmo78/Win32DirectX12-FPSCamera plus things i didn't implement from in there
 - Add a Retry Create Headset loop for when headset is disconnected. Also need logic to handle if headset is unplugged from one GPU but then plugged into another gpu
-- Hand tracking (controllers)
+- Hand tracking (controllers) and better head tracking
 - Projective time warping
