@@ -1786,7 +1786,7 @@ s32 APIENTRY WinMain(
 	//		have a little on screen window with one of those waiting spinner icons saying searching for headset
 	//		also figure out minimal recreate. Do we need to reupload models and all that? Maybe for some headset but not others? or are they only on GPUs, so then no worry?
 	//		pause the game too! 
-	//TODO handle GPU device lost! Swap to next user preferred GPU or integrated graphics if they have none
+	//TODO handle GPU device lost! If there is headset find GPU with headset attachted, (following is not our situation)If there is no headset Swap to next user preferred GPU or integrated graphics if they have none
 	ovrInitParams oculusInitParams = { ovrInit_RequestVersion | ovrInit_FocusAware, OVR_MINOR_VERSION, NULL, 0, 0 };
 	if( ovr_Initialize( &oculusInitParams ) >= 0 ) //can this persist outside of loop when trying to recreate headset? or does this need to be in retry create loop?
 	{
