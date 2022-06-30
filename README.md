@@ -22,3 +22,4 @@ Improvements to make:
 - Add a Retry Create Headset loop for when headset is disconnected. Also need logic to handle if headset is unplugged from one GPU but then plugged into another gpu
 - Hand tracking (controllers) and better head tracking
 - Projective time warping
+- Compare render speed differences of storing all vertex buffers in the same buffer and then accessing them with different views and store them all in separate buffers (same with index buffer vertex buffer combos)
